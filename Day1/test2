@@ -1,0 +1,23 @@
+import getpass
+import _md5
+username = input("username:")
+password = input("password:")
+
+print(username, password)
+tr = 1
+
+while tr < 4:
+    print("Please enter your username and password to verify:")
+    username1 = input("username:")
+    password1 = input("password:")
+    if username1 == username and password1 == password:
+        tr=5
+        print(f"Welcome {username} Login")
+    else:
+        print("Wrong username or password!")
+        tr += 1
+        print(f"You try {tr - 1} times ")
+if tr == 4:
+    print("Your try time is to more!")
+else:
+    print("213")
