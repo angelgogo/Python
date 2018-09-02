@@ -5,5 +5,9 @@ def jiecheng(num):
         return 1
     return num * jiecheng(num - 1)
 
+
 def pjiecheng(num):
     print(jiecheng(num))
+
+
+pjiecheng(5)
